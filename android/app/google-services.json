@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1001150861090",
+    "project_id": "caffetropico-33ab3",
+    "storage_bucket": "caffetropico-33ab3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001150861090:android:9c53c6850d9739107f5f7b",
+        "android_client_info": {
+          "package_name": "com.example.tropico"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVcRybOP-KrLAE1U6V67uGMMq-luhCdEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
