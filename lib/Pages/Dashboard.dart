@@ -1,8 +1,26 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tropico/Pages/Alk.dart';
+import 'package:tropico/Pages/Gazirana.dart';
+import 'package:tropico/Pages/Pivo.dart';
+import 'package:tropico/Pages/Negazirana.dart';
+import 'package:tropico/Pages/Topla.dart';
+
+import '../firebase_options.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key});
+  Future<void> initFirebase() async {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  }
+
+  void main() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    await initFirebase(); // Initialize Firebase
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +134,13 @@ class HomePage extends StatelessWidget {
                                   32), // Add button border radius
                             ), // Set the text color
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => Topla(),
+                              ),
+                            );
+                          },
                           child: Align(
                             alignment: Alignment.center,
                             child: Text(
@@ -165,11 +189,72 @@ class HomePage extends StatelessWidget {
                                   32), // Add button border radius
                             ), // Set the text color
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => GaziranaPica(),
+                              ),
+                            );
+                          },
                           child: Align(
                             alignment: Alignment.center,
                             child: Text(
-                              'Bezalkoholna pića',
+                              'Gazirana pića',
+                              style: GoogleFonts.poppins(
+                                color: Colors.white,
+                                fontSize: 19,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 25),
+                    SizedBox(
+                      height: 110, // height of button
+                      width: 280,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(
+                              32), // Make the container round
+                          border: Border.all(
+                            color: Colors.white,
+                            width: 1.0, // Set the border width to 1
+                          ),
+                          image: DecorationImage(
+                            image: const AssetImage(
+                                'assets/prir.jpeg'), // Add the background image
+                            fit: BoxFit.cover,
+                            colorFilter: ColorFilter.mode(
+                              Colors.black.withOpacity(
+                                  0.3), // Add the dimming color and opacity
+                              BlendMode.darken,
+                            ),
+                          ),
+                        ),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor: Colors.black,
+                            backgroundColor: Colors.transparent,
+                            padding: EdgeInsets
+                                .zero, // Remove padding to fill the button with the text
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(
+                                  32), // Add button border radius
+                            ), // Set the text color
+                          ),
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => NegaziranaPica(),
+                              ),
+                            );
+                          },
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              'Negazirana pica',
                               style: GoogleFonts.poppins(
                                 color: Colors.white,
                                 fontSize: 19,
@@ -214,7 +299,13 @@ class HomePage extends StatelessWidget {
                                   32), // Add button border radius
                             ), // Set the text color
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => AlkoholnaPica(),
+                              ),
+                            );
+                          },
                           child: Align(
                             alignment: Alignment.center,
                             child: Text(
@@ -263,7 +354,13 @@ class HomePage extends StatelessWidget {
                                   32), // Add button border radius
                             ), // Set the text color
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => Pivo(),
+                              ),
+                            );
+                          },
                           child: Align(
                             alignment: Alignment.center,
                             child: Text(

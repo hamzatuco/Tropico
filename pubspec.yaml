@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts:
   firebase_core:
+  cloud_firestore:
+  lottie:
 
 dev_dependencies:
   flutter_test:
@@ -59,9 +61,16 @@ flutter:
     - assets/logo.png
     - assets/toplapica.png
     - assets/bezalk.jpg
+    - assets/prir.jpeg
     - assets/alk.jpg
     - assets/pivo.jpg
     - assets/lula.jpg
+    - assets/kafa.json
+    - assets/pozadine/topla.jpg
+    - assets/pozadine/gazirana.jpeg
+    - assets/pozadine/negazirana.jpeg
+
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

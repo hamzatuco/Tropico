@@ -1,26 +1,79 @@
 {
   "project_info": {
-    "project_number": "1001150861090",
-    "project_id": "caffetropico-33ab3",
-    "storage_bucket": "caffetropico-33ab3.appspot.com"
+    "project_number": "213695105815",
+    "project_id": "scanbrew-a47dc",
+    "storage_bucket": "scanbrew-a47dc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1001150861090:android:9c53c6850d9739107f5f7b",
+        "mobilesdk_app_id": "1:213695105815:android:b396a3fa8a1aa3c19a0552",
         "android_client_info": {
-          "package_name": "com.example.tropico"
+          "package_name": "com.example.caffeadmin"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "213695105815-v91ocsupuliqm1ifhe3mncm3bn490emq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDVcRybOP-KrLAE1U6V67uGMMq-luhCdEE"
+          "current_key": "AIzaSyDtFgcSugPb0sBrkka_Q8oCXBoyHRujWaE"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213695105815-v91ocsupuliqm1ifhe3mncm3bn490emq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "213695105815-2idtkj8pdb29r7k1b3u16k7nj5fc65vo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.caffeadmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213695105815:android:1f5aeac427912e1e9a0552",
+        "android_client_info": {
+          "package_name": "com.example.tropico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213695105815-v91ocsupuliqm1ifhe3mncm3bn490emq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtFgcSugPb0sBrkka_Q8oCXBoyHRujWaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213695105815-v91ocsupuliqm1ifhe3mncm3bn490emq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "213695105815-2idtkj8pdb29r7k1b3u16k7nj5fc65vo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.caffeadmin"
+              }
+            }
+          ]
         }
       }
     }

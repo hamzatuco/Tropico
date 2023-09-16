@@ -47,28 +47,28 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAv0dOlds_XoDPoxP-O4UkCN5ji3rD6Ri4',
-    appId: '1:1001150861090:web:57f4513cbb20c72f7f5f7b',
-    messagingSenderId: '1001150861090',
-    projectId: 'caffetropico-33ab3',
-    authDomain: 'caffetropico-33ab3.firebaseapp.com',
-    storageBucket: 'caffetropico-33ab3.appspot.com',
+    apiKey: 'AIzaSyCkOZJYqDcuYwEuooAyqDmseQXm_UvjxFU',
+    appId: '1:213695105815:web:5034cccfe0c9d7839a0552',
+    messagingSenderId: '213695105815',
+    projectId: 'scanbrew-a47dc',
+    authDomain: 'scanbrew-a47dc.firebaseapp.com',
+    storageBucket: 'scanbrew-a47dc.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDVcRybOP-KrLAE1U6V67uGMMq-luhCdEE',
-    appId: '1:1001150861090:android:9c53c6850d9739107f5f7b',
-    messagingSenderId: '1001150861090',
-    projectId: 'caffetropico-33ab3',
-    storageBucket: 'caffetropico-33ab3.appspot.com',
+    apiKey: 'AIzaSyDtFgcSugPb0sBrkka_Q8oCXBoyHRujWaE',
+    appId: '1:213695105815:android:1f5aeac427912e1e9a0552',
+    messagingSenderId: '213695105815',
+    projectId: 'scanbrew-a47dc',
+    storageBucket: 'scanbrew-a47dc.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAiXSOYpRySqNQl3kH4RNNkKSdSJH6L7CQ',
-    appId: '1:1001150861090:ios:4380eb09241bab5c7f5f7b',
-    messagingSenderId: '1001150861090',
-    projectId: 'caffetropico-33ab3',
-    storageBucket: 'caffetropico-33ab3.appspot.com',
+    apiKey: 'AIzaSyCGuELnloWWDh3LPqTEE0k305fQKjCE0lI',
+    appId: '1:213695105815:ios:897c91b85dd9f8b19a0552',
+    messagingSenderId: '213695105815',
+    projectId: 'scanbrew-a47dc',
+    storageBucket: 'scanbrew-a47dc.appspot.com',
     iosBundleId: 'com.example.tropico',
   );
 }
