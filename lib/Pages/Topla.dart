@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, library_private_types_in_public_api
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -8,7 +10,7 @@ import '../firebase_options.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeFirebase();
-  runApp(Topla());
+  runApp(const Topla());
 }
 
 Future<void> initializeFirebase() async {
@@ -123,13 +125,13 @@ class _ToplaState extends State<Topla> {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(10)),
+                                  const BorderRadius.all(Radius.circular(10)),
                               border: Border.all(
                                 color: Colors.white, // White border color
                                 width: 2, // Adjust the border width as needed
                               ),
-                              color: const Color(
-                                  0xFFD2B48C), // Pastel coffee color
+                              color: const Color(0xFFD2B48C)
+                                  .withOpacity(.8), // Pastel coffee color
                             ),
                             height: 90,
                             child: Padding(
@@ -143,7 +145,7 @@ class _ToplaState extends State<Topla> {
                                           60, // Adjust the image size as needed
                                       height: 60,
                                     ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width:
                                         15, // Add some space between the image and texts
                                   ),
@@ -162,7 +164,7 @@ class _ToplaState extends State<Topla> {
                                             ),
                                           ),
                                         ),
-                                        Spacer(), // Pushes the following text to the far right
+                                        const Spacer(), // Pushes the following text to the far right
                                         Align(
                                           alignment: Alignment.centerRight,
                                           child: Text(
@@ -197,7 +199,7 @@ class _ToplaState extends State<Topla> {
               backgroundColor: Colors.transparent,
               elevation: 0,
               leading: IconButton(
-                icon: Icon(Icons.arrow_back),
+                icon: const Icon(Icons.arrow_back),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },

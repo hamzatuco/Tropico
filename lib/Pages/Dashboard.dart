@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, use_key_in_widget_constructors
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -81,7 +83,7 @@ class HomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(25, 15, 25, 0),
                       child: Text(
-                        '"Neki slogan ovdje"',
+                        'Okusi raj pod palmama',
                         textAlign: TextAlign.center,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.poppins(
@@ -137,7 +139,7 @@ class HomePage extends StatelessWidget {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => Topla(),
+                                builder: (context) => const Topla(),
                               ),
                             );
                           },
@@ -192,7 +194,7 @@ class HomePage extends StatelessWidget {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => GaziranaPica(),
+                                builder: (context) => const GaziranaPica(),
                               ),
                             );
                           },
@@ -247,7 +249,7 @@ class HomePage extends StatelessWidget {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => NegaziranaPica(),
+                                builder: (context) => const NegaziranaPica(),
                               ),
                             );
                           },
@@ -302,7 +304,7 @@ class HomePage extends StatelessWidget {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => AlkoholnaPica(),
+                                builder: (context) => const AlkoholnaPica(),
                               ),
                             );
                           },
@@ -357,7 +359,7 @@ class HomePage extends StatelessWidget {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => Pivo(),
+                                builder: (context) => const Pivo(),
                               ),
                             );
                           },

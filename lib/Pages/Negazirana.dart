@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, library_private_types_in_public_api, non_constant_identifier_names
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -8,7 +10,7 @@ import '../firebase_options.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeFirebase();
-  runApp(NegaziranaPica());
+  runApp(const NegaziranaPica());
 }
 
 Future<void> initializeFirebase() async {
@@ -125,13 +127,13 @@ class _NegaziranaPicaState extends State<NegaziranaPica> {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(10)),
+                                  const BorderRadius.all(Radius.circular(10)),
                               border: Border.all(
                                 color: Colors.white, // White border color
                                 width: 2, // Adjust the border width as needed
                               ),
-                              color: Color.fromARGB(
-                                  255, 151, 195, 127), // Pastel coffee color
+                              color: const Color.fromARGB(255, 151, 195, 127)
+                                  .withOpacity(0.6), // Pastel coffee color
                             ),
                             height: 90,
                             child: Padding(
@@ -145,7 +147,7 @@ class _NegaziranaPicaState extends State<NegaziranaPica> {
                                           60, // Adjust the image size as needed
                                       height: 60,
                                     ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width:
                                         10, // Add some space between the image and texts
                                   ),
@@ -164,7 +166,7 @@ class _NegaziranaPicaState extends State<NegaziranaPica> {
                                             ),
                                           ),
                                         ),
-                                        Spacer(), // Pushes the following text to the far right
+                                        const Spacer(), // Pushes the following text to the far right
                                         Align(
                                           alignment: Alignment.centerRight,
                                           child: Text(
@@ -198,7 +200,7 @@ class _NegaziranaPicaState extends State<NegaziranaPica> {
               backgroundColor: Colors.transparent,
               elevation: 0,
               leading: IconButton(
-                icon: Icon(Icons.arrow_back),
+                icon: const Icon(Icons.arrow_back),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
